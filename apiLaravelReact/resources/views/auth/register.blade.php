@@ -1,3 +1,9 @@
+<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('teste/css/sb-admin-2.css') }}" rel="stylesheet" type="text/css" />
+<script src="{{ asset('teste/js/sb-admin-2.js') }}" type="text/js"></script>
+<link rel="manifest" href="{{asset('teste/assets/img/icons/site.webmanifest')}}">
+<link rel="stylesheet" href="{{asset('/fontawesome-free/css/fontawesome.min.css')}} ">
+<link rel="stylesheet" href="{{asset('/fontawesome-free/css/all.min.css')}} ">
 <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
@@ -117,13 +123,13 @@
     });
 </script>
 @php
-    $setor = array('0'=>'Selecione seu Setor', '1' =>'adminsitrativo', 2=> 'sla');
-    $cargo = array('0'=>'Selecione seu Cargo', '1' =>'Juiz', 2=> 'Advogado');
+
 @endphp
 <div class="login-page">
     <div class="form">
         {{Form::open(['route' => 'validaRegister'])}}
             {{Form::text('name',null,['placeholder'=> 'nome'])}}
+            {{Form::text('cpf',null,['placeholder'=> 'cpf'])}}
             {{Form::text('email',null,['placeholder'=> 'email'])}}
             {{Form::text('telefone',null,['placeholder'=> 'telefone'])}}
             {{Form::select('setor',$setor,['placeholder'=> 'telefone', 'class' => 'form-control'])}}
@@ -131,8 +137,12 @@
             {{--            <input type="text" placeholder="username"/>--}}
             {{Form::password('senha',['placeholder'=>'senha'])}}
             {{--            <input type="password" placeholder="senha"/>--}}
-            <button>login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+            <button>Cadastrar</button>
+
+            <br>
+
+            <a href="{{route('login')}}" class="btn bnt-danger">Voltar</a>
+{{--            <p class="message">Not registered? <a href="#">Create an account</a></p>--}}
         {{{Form::close()}}}
     </div>
 </div>

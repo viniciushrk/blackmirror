@@ -10,6 +10,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -43,6 +44,13 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
+    public function index(){
+        $v['titulo'] = 'Registre-se';
+        $v['setor'] = array('0'=>'Selecione seu Setor', '1' =>'adminsitrativo', 2=> 'sla');
+        $v['cargo'] = array('0'=>'Selecione seu Cargo', '1' =>'Juiz', 2=> 'Advogado');
+
+        return view('auth.register',$v);
+    }
 
     /**
      * Get a validator for an incoming registration request.
@@ -70,12 +78,13 @@ class RegisterController extends Controller
          User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
+            'cpf' => $request->input('cpf'),
             'telefone' => $request->input('telefone'),
             'setor' => $request->input('setor'),
             'cargo' => $request->input('cargo'),
             'password' => Hash::make($request->input('password')),
         ]);
 
-         return route('/');
+         return Redirect()->route('home');
     }
 }

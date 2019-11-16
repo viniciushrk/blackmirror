@@ -48,6 +48,15 @@ Auth::routes(
 
 );
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', function (){
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', 'Auth\RegisterController@index')->name('Register');
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('logout', ['as' => 'logout', 'uses' => 'AcessoController@logout'])->name('logout');
 
 Route::post('/validaRegister','Auth\RegisterController@create')->name('validaRegister');
+Route::post('/validaLogin','Auth\LoginController@validaLogin')->name('validaLogin');

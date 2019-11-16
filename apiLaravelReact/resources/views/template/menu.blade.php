@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel 6 CRUD Example</title>
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('teste/css/sb-admin-2.css') }}" rel="stylesheet" type="text/css" />
-    <script src="{{ asset('teste/js/sb-admin-2.js') }}" type="text/js"></script>
-</head>
-<body class="page-top">
+{{--<!DOCTYPE html>--}}
+{{--<html lang="pt-br">--}}
+{{--<head>--}}
+{{--    <meta charset="UTF-8">--}}
+{{--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--}}
+{{--    <meta http-equiv="X-UA-Compatible" content="ie=edge">--}}
+{{--    <title>Laravel 6 CRUD Example</title>--}}
+{{--    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" />--}}
+{{--    <link href="{{ asset('teste/css/sb-admin-2.css') }}" rel="stylesheet" type="text/css" />--}}
+{{--    <script src="{{ asset('teste/js/sb-admin-2.js') }}" type="text/js"></script>--}}
+{{--</head>--}}
+{{--<body class="page-top">--}}
     <div class="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -236,8 +236,8 @@
         </nav>
     </div>
 
-</body>
-</html>
+{{--</body>--}}
+{{--</html>--}}
 
 
 
