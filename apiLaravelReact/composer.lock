@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa503b104f700e4337a4bf209a56bc8a",
+    "content-hash": "b48d70fb88a56ee47d3b9bf02c3cb92d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -760,6 +760,43 @@
                 "storage"
             ],
             "time": "2019-10-16T21:01:05+00:00"
+        },
+        {
+            "name": "libreworks/ext-mongodb-hhi",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/libreworks/ext-mongodb-hhi.git",
+                "reference": "286700e3691c594b47190123c9a1ac385d07a218"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/libreworks/ext-mongodb-hhi/zipball/286700e3691c594b47190123c9a1ac385d07a218",
+                "reference": "286700e3691c594b47190123c9a1ac385d07a218",
+                "shasum": ""
+            },
+            "suggest": {
+                "ext-mongodb": "To connect to MongoDB"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Typechecker definitions for MongoDB HHVM Driver",
+            "homepage": "https://github.com/libreworks/ext-mongodb-hhi",
+            "keywords": [
+                "hack",
+                "hhi",
+                "hhvm",
+                "mongodb"
+            ],
+            "time": "2016-11-29T19:14:34+00:00"
         },
         {
             "name": "monolog/monolog",
