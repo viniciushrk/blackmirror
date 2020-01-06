@@ -1,3 +1,3 @@
 # blackmirror
 
--- mkd | mkd.sh desc:"script que cria uma pasta e já injeta um sample README.md  nela"
+Idéia de um sistema, feito em um hackaton do Tribunal de Justiça do Estado de Rondônia, idéia que será desenvolvida em equipe.
